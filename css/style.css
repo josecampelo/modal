@@ -1,0 +1,83 @@
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap";
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* BLOCOS */
+.box-pai{
+    border: 5px solid #333333;
+}
+
+.box-preto{
+    width: 100%;
+    height: 30vh;
+    background-color: #1d1d1d;
+}
+
+.box-branco{
+    width: 100%;
+    height: 30vh;
+    background-color: #ffffff;
+}
+
+.box-preto p, .box-branco p{
+    font-family: sans-serif;
+    text-align: center;
+    padding: 10vh 0;
+    font-size: 10vh;
+    font-weight: bold;
+    cursor: pointer;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.box-preto p{
+    color: #ffffff;
+}
+
+.box-branco p{
+    color: #1d1d1d;
+}
+
+/* MODAL */
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 350ms;
+}
+
+.modal{
+    background-color: #ffffff;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.close-modal{
+    top: 5px;
+    right: 5px;
+    position: absolute;
+}
+
+.modal-content iframe{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    margin: 5vh auto;
+}
+
+/* MODAL.ACTIVE */
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+    transition: 350ms;
+}
